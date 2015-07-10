@@ -10,7 +10,7 @@ RUN apt-get update && apt-get upgrade -y && \
     apt-get install -y build-essential wget
 
 RUN wget http://nginx.org/download/nginx-1.9.2.tar.gz && \
-    tar xvf http://nginx.org/download/nginx-1.9.2.tar.gz && \
+    tar xvf nginx-1.9.2.tar.gz && \
     cd nginx-1.9.2 && \
     ./configure --with-stream --without-http_rewrite_module && \
     make && \
